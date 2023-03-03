@@ -21,7 +21,7 @@
         <nav>
             <div class="wrapper">
                 <div class="header_wrapper">
-                    <div class="header_block">
+                    <div class="header_block" id="block">
                         <a href="" class="header_link">Главная</a>
                         <a href="" class="header_link">Портфолио</a>
                         <div class="header_logo">
@@ -30,6 +30,10 @@
                         <a href="" class="header_link">Отзывы</a>
                         <a href="" class="header_link">Контакты</a>
                     </div>
+                    <div class="burger_menu">
+                        <p class="burger" id="burger">&equiv;</p>
+                        <p class="burger_close" id="close">&times;</p>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -37,7 +41,7 @@
     <main>
         <section class="video">
             <video class="video_futag" poster="star.png" autoplay="autoplay" loop="loop" muted="">
-                <source src="https://disk.yandex.ru/d/HeSFg8FmosdTDQ/для%20сайта%20без%20звука.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="video/intro.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
             </video>
         </section>
         <section class="about">
@@ -129,6 +133,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
