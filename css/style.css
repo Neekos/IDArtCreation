@@ -55,6 +55,14 @@ header .header_wrapper .header_block .header_link {
 header .header_wrapper .header_block :hover {
   color: pink;
 }
+header .header_wrapper .burger_menu {
+  width: 100%;
+  display: none;
+}
+header .header_wrapper .burger_menu .burger {
+  color: white;
+  font-size: 40px;
+}
 
 main .video {
   position: relative;
@@ -243,34 +251,40 @@ footer .footer_block .footer_right .footer_contact :hover {
   }
   header nav .wrapper .header_wrapper {
     width: 100%;
-    height: 150px;
-    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
   }
   header nav .wrapper .header_wrapper .header_block {
-    width: 100%;
+    width: 10%;
     display: none;
+    flex: 10;
+    margin-right: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   header nav .wrapper .header_wrapper .header_block .header_logo {
-    position: absolute;
+    display: inline-block;
+  }
+  header nav .wrapper .header_wrapper .burger_menu {
+    display: inline-block;
+    margin-left: 30px;
+    flex: 1;
+  }
+  header nav .wrapper .header_wrapper .burger_menu .burger {
+    color: white;
+    font-size: 50px;
+  }
+  header nav .wrapper .header_wrapper .burger_menu .burger_close {
+    color: white;
+    font-size: 50px;
     display: none;
   }
-  header nav .wrapper ::before {
-    position: absolute;
-    content: "&equiv;";
-    font-size: 25px;
-    color: white;
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    right: 50px;
-    z-index: 1;
-  }
-  header nav .wrapper :hover::before {
-    cursor: pointer;
-    color: red;
+  header nav .wrapper .header_wrapper .burger_menu :hover {
+    color: pink;
   }
   main .video {
-    height: 260px;
+    height: 270px;
   }
   main .video .video_futag {
     margin-top: 130px;

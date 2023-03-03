@@ -82,6 +82,16 @@ header {
                 color: pink;
             }
         }
+
+        .burger_menu {
+            width: 100%;
+            display: none;
+
+            .burger {
+                color: white;
+                font-size: 40px;
+            }
+        }
     }
 }
 
@@ -321,37 +331,45 @@ footer {
 
                 .header_wrapper {
                     width: 100%;
-                    height: 150px;
-                    position: relative;
-
-
+                    display: flex;
+                    flex-direction: row-reverse;
 
                     .header_block {
-                        width: 100%;
+                        width: 10%;
                         display: none;
+                        flex: 10;
+                        margin-right: 50px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
 
                         .header_logo {
-                            position: absolute;
-                            display: none;
+                            display: inline-block;
                         }
                     }
-                }
 
-                ::before {
-                    position: absolute;
-                    content: "&equiv;";
-                    font-size: 25px;
-                    color: white;
-                    width: 50px;
-                    height: 50px;
-                    top: 20px;
-                    right: 50px;
-                    z-index: 1;
-                }
+                    .burger_menu {
+                        display: inline-block;
+                        margin-left: 30px;
+                        flex: 1;
 
-                :hover::before {
-                    cursor: pointer;
-                    color: red;
+                        .burger {
+                            color: white;
+                            font-size: 50px;
+
+                        }
+
+                        .burger_close {
+                            color: white;
+                            font-size: 50px;
+                            display: none;
+                        }
+
+                        :hover {
+                            color: pink;
+                        }
+
+                    }
                 }
             }
         }
@@ -360,7 +378,7 @@ footer {
     main {
 
         .video {
-            height: 260px;
+            height: 270px;
 
             .video_futag {
                 margin-top: 130px;
