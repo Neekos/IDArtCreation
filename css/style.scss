@@ -1,5 +1,5 @@
-$backgoundColor: black;
-$mainColor: white;
+$backgoundColor: rgb(0, 0, 0);
+$mainColor: #ffffff;
 $textColor: black;
 $headerColor: white;
 $mainTextColor: grey;
@@ -46,21 +46,9 @@ header {
             flex-wrap: wrap;
             position: relative;
 
-            // @media (max-width: 500px) {
-            //     flex-direction: column;
-            //     padding-top: 120px;
-            // }
-
             .header_logo_img {
                 max-width: 150px;
                 margin: 20px;
-
-                //     @media (max-width: 600px) {
-                //         position: absolute;
-                //         width: 100px;
-                //         top: 0;
-                //         left: 130px;
-                //     }
 
             }
 
@@ -315,6 +303,7 @@ footer {
 
 }
 
+
 @media screen and (max-width:576px) {
     * {
         margin: 0;
@@ -336,25 +325,30 @@ footer {
                 width: 100%;
 
                 .header_wrapper {
+                    position: relative;
                     width: 100%;
+                    height: 70px;
                     display: flex;
                     flex-direction: row-reverse;
-
+                    transition-property: height, top;
+                    transition-duration: 1s;
                     .header_block {
-                        width: 10%;
-                        display: none;
+                        position: absolute;
+                        top:-400px;
+                        right: center;
+                        display: flex;
                         flex: 10;
-                        margin-right: 50px;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-
                         .header_logo {
                             display: inline-block;
                         }
+                        transition:1s;
                     }
 
                     .burger_menu {
+                        z-index: 7;
                         display: inline-block;
                         margin-left: 30px;
                         flex: 1;
@@ -407,8 +401,6 @@ footer {
         .contact {
             margin: 0 20px;
         }
-
-
     }
 
     footer {
@@ -427,6 +419,5 @@ footer {
                 margin-bottom: 50px;
             }
         }
-
     }
 }

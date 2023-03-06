@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 header .header_wrapper {
   width: 100%;
@@ -177,7 +177,7 @@ main .contact_block .contact_item :hover {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 footer .footer_block {
   padding: 20px 0;
@@ -256,23 +256,30 @@ footer .footer_block .footer_right .footer_contact :hover {
     width: 100%;
   }
   header nav .wrapper .header_wrapper {
+    position: relative;
     width: 100%;
+    height: 70px;
     display: flex;
     flex-direction: row-reverse;
+    transition-property: height, top;
+    transition-duration: 1s;
   }
   header nav .wrapper .header_wrapper .header_block {
-    width: 10%;
-    display: none;
+    position: absolute;
+    top: -400px;
+    right: center;
+    display: flex;
     flex: 10;
-    margin-right: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 1s;
   }
   header nav .wrapper .header_wrapper .header_block .header_logo {
     display: inline-block;
   }
   header nav .wrapper .header_wrapper .burger_menu {
+    z-index: 7;
     display: inline-block;
     margin-left: 30px;
     flex: 1;

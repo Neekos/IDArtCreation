@@ -1,14 +1,18 @@
 const close = document.getElementById('close')
 const burger = document.getElementById('burger')
 const block = document.getElementById('block')
+const block1 = document.getElementById('block1')
 
 burger.addEventListener('click', () => {
-    block.style.display = "flex"
     close.style.display = "block"
     burger.style.display = "none"
+    block.style.top = "20px"
+    block1.style.height = "450px"
 })
 close.addEventListener('click', () => {
-    block.style.display = "none"
+    block.style.top = "-400px"
     close.style.display = "none"
     burger.style.display = "block"
+    block1.style.height = "70px"
+
 })
