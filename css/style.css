@@ -265,6 +265,7 @@ footer .footer_block .footer_right .footer_contact :hover {
     transition-duration: 1s;
   }
   header nav .wrapper .header_wrapper .header_block {
+    z-index: 8;
     position: absolute;
     top: -400px;
     right: center;
@@ -287,11 +288,17 @@ footer .footer_block .footer_right .footer_contact :hover {
   header nav .wrapper .header_wrapper .burger_menu .burger {
     color: white;
     font-size: 50px;
+    width: 40px;
+    padding: 5px;
+    align-items: center;
   }
   header nav .wrapper .header_wrapper .burger_menu .burger_close {
+    align-items: center;
+    padding: 5px;
     color: white;
     font-size: 50px;
     display: none;
+    width: 40px;
   }
   header nav .wrapper .header_wrapper .burger_menu :hover {
     color: pink;

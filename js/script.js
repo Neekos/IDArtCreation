@@ -6,7 +6,7 @@ const block1 = document.getElementById('block1')
 burger.addEventListener('click', () => {
     close.style.display = "block"
     burger.style.display = "none"
-    block.style.top = "20px"
+    block.style.top = "50px"
     block1.style.height = "450px"
 })
 close.addEventListener('click', () => {
