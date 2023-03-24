@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,47 +12,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-    <title>IDArtCreation</title>
+    <title>DC</title>
 </head>
 
 <body>
-    <header id="top">
-        <nav>
-            <div class="wrapper">
-                <div class="header_wrapper" id="block1">
-                    <div class="header_block" id="block">
-                        <a href="" class="header_link">Главная</a>
-                        <a href="" class="header_link">Портфолио</a>
-                        <div class="header_logo">
-                            <img src="img/logo.png" alt="" class="header_logo_img" />
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <nav class="header__menu">
+                <div class="header__menu-wrapper">
+                    <div class="header__menu-block">
+                        <a href="#" class="header__menu-link active">Главная</a>
+                        <a href="#" class="header__menu-link">Портфолио</a>
+                        <div class="header__logo">
+                            <img src="img/logo.png" alt="" class="header__menu-logo" />
                         </div>
-                        <a href="" class="header_link">Отзывы</a>
-                        <a href="" class="header_link">Контакты</a>
+                        <a href="#" class="header__menu-link">Отзывы</a>
+                        <a href="#" class="header__menu-link">Контакты</a>
                     </div>
-                    <div class="burger_menu">
-                        <p class="burger" id="burger">&equiv;</p>
-                        <p class="burger_close" id="close">&times;</p>
+                    <div class="header__menu-burger">
+                        <p class="header__menu-burger-item menu-burger-active">&equiv;</p>
+                        <p class="header__menu-burger-item">&times;</p>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <iframe class="frameVideo"
-        src="https://www.youtube.com/embed/mW8a9prAmZY/VIDEO_ID?controls=0&autoplay=1&modestbranding=1&rel=0" title=""
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
-    <main>
-        <!-- <section class="video">
-            <video class="video_futag" poster="star.png" autoplay="autoplay" loop="loop" muted="">
-                <source src="https://youtu.be/mW8a9prAmZY" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-            </video>
-        </section> -->
-
-        <section class="about">
-            <div class="wrapper">
-                <div class="about_block">
-                    <h3 class="about_title">О нас</h3>
-                    <p class="about_text">
+    <div class="intro">
+        <!-- <iframe class="intro__video"
+            src="https://www.youtube.com/embed/mW8a9prAmZY/VIDEO_ID?controls=0&autoplay=1&modestbranding=1&rel=0"
+            title="" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share">
+        </iframe> -->
+        <div class="intro__img">
+            <img src="img/intro.jpg" alt="" class="intro__image-img">
+        </div>
+    </div>
+    <main class="main">
+        <section class="main__about">
+            <div class="main__about-wrapper wrapper">
+                <div class="main__about-block">
+                    <h3 class="main__about-title">О нас</h3>
+                    <p class="main__about-text">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Rerum rem voluptatum doloribus maxime asperiores. Quia, nihil!
                         Earum tempora fuga suscipit quisquam,
@@ -62,74 +61,74 @@
                 </div>
             </div>
         </section>
-        <section class="price">
-            <div class="wrapper">
-                <div class="price_block">
-                    <div class="price_title">Что мы умеем снимать</div>
-                    <div class="price_skills">
-                        <div class="item_price">
-                            <h3 class="price_subTitle">свадьбы</h3>
-                            <img src="img/ico1.png" alt="" class="price_ico">
+        <section class="main__price">
+            <div class="main__price-wrapper wrapper">
+                <div class="main__price-block">
+                    <div class="main__price-title">Что мы умеем снимать</div>
+                    <div class="main__price-skills">
+                        <div class="main__price-item">
+                            <h3 class="main__price-title">свадьбы</h3>
+                            <img src="img/ico1.png" alt="" class="main__price-ico">
                         </div>
-                        <div class="item_price">
-                            <h3 class="price_subTitle">выпускные</h3>
-                            <img src="img/ico2.png" alt="" class="price_ico">
+                        <div class="main__price-item">
+                            <h3 class="main__price-title">выпускные</h3>
+                            <img src="img/ico2.png" alt="" class="main__price-ico">
                         </div>
-                        <div class="item_price">
-                            <h3 class="price_subTitle">корпоративы</h3>
-                            <img src="img/ico3.png" alt="" class="price_ico">
+                        <div class="main__price-item">
+                            <h3 class="main__price-title">корпоративы</h3>
+                            <img src="img/ico3.png" alt="" class="main__price-ico">
                         </div>
-                        <div class="item_price">
-                            <h3 class="price_subTitle">комерческие работы</h3>
-                            <img src="img/ico4.png" alt="" class="price_ico">
+                        <div class="main__price-item">
+                            <h3 class="main__price-title">комерческие работы</h3>
+                            <img src="img/ico4.png" alt="" class="main__price-ico">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact">
-            <div class="wrapper">
-                <div class="contact_block">
-                    <div class="contact_title">как с нами связаться</div>
-                    <ul class="contacts">
-                        <li class="contact_item">
-                            <a href="" class="contact_link">vk</a>
+        <section class="main__contact">
+            <div class="main__contact-wrapper wrapper">
+                <div class="main__contact-block">
+                    <div class="main__contact-title">как с нами связаться</div>
+                    <ul class="main__contact-block-items">
+                        <li class="main__contact-item">
+                            <a href="" class="main__contact-link">vk</a>
                         </li>
-                        <li class="contact_item">
-                            <a href="" class="contact_link">telegram</a>
+                        <li class="main__contact-item">
+                            <a href="" class="main__contact-link">telegram</a>
                         </li>
-                        <li class="contact_item">
-                            <a href="" class="contact_link">whatsapp</a>
+                        <li class="main__contact-item">
+                            <a href="" class="main__contact-link">whatsapp</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="wrapper">
-            <div class="footer_block">
-                <div class="footer_left">
-                    <h3 class="footer_name">IDArtCreation</h3>
-                    <p class="politics">© 2023 All Right Reserved.</p>
+    <footer class="footer">
+        <div class="footer__wrapper wrapper">
+            <div class="footer__block">
+                <div class="footer__block-left">
+                    <h3 class="footer__block-name">DarckCreative</h3>
+                    <p class="footer__block-politics">© 2023 All Right Reserved.</p>
                 </div>
-                <div class="footer_center">
-                    <a href="#top" class="top">&#9650</a>
+                <div class="footer__block-center">
+                    <a href="#top" class="footer__block-top">&#9650</a>
                 </div>
-                <div class="footer_right">
-                    <ul class="footer_contact">
-                        <li class="contact_item">
-                            <a href="" class="footer_link">
+                <div class="footer__block-right">
+                    <ul class="footer__block-contact">
+                        <li class="footer_block-contact-item">
+                            <a href="" class="footer__block-link">
                                 <i class="fa fa-vk" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li class="contact_item">
-                            <a href="" class="footer_link">
+                        <li class="footer_block-contact-item">
+                            <a href="" class="footer__block-link">
                                 <i class="fa fa-telegram" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li class="contact_item">
-                            <a href="" class="footer_link">
+                        <li class="footer_block-contact-item">
+                            <a href="" class="footer__block-link">
                                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
                             </a>
                         </li>

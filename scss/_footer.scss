@@ -1,0 +1,77 @@
+.footer {
+    background-color: $backgoundColor;
+    position: relative;
+    z-index: 2;
+    &__block {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__block-left {
+        max-width: 300px;
+    }
+    &__block-name {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__block-politics {
+        color: white;
+    }
+
+    &__block-center {
+        max-width: 200px;
+    }
+    &__block-top {
+        text-decoration: none;
+        font-size: 50px;
+        color: white;
+        :hover {
+            color: pink;
+        }
+    }
+
+
+    &__block-right {
+        max-width: 300px;
+    }
+    &__block-contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    &__block-link {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin: 0 20px;
+    }
+
+    .fa {
+        font-size: 35px;
+
+    }
+
+    .fa-vk {}
+
+    :hover {
+        color: pink;
+    }
+
+    .fa-telegram {}
+
+    :hover {
+        color: pink;
+    }
+
+    .fa-whatsapp {}
+
+    :hover {
+        color: pink;
+    }
+}

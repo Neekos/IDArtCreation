@@ -1,0 +1,86 @@
+@media screen and (max-width:$breakpoint_xxl){
+
+}
+@media screen and (max-width:$breakpoint_xl){
+    
+}
+@media screen and (max-width:$breakpoint_md){
+    .header{
+        &__menu-link{
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        &__logo{
+            width: 80px;
+        }
+    }
+    
+}
+@media screen and (max-width:$breakpoint_sm) {
+    .header{
+        min-height: 60px;
+        transition: 2s;
+        &__menu-block{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: -500px;
+            left: 0;
+            transition: 2s;
+        }
+        &__logo{
+            width: 100px;
+        }
+        &__menu-link{
+            margin: 15px 0;
+            font-size: 20px;
+        }
+        &__menu-burger{
+            width: 30px;
+            height: 35px;
+            display: block;
+            position:absolute;
+            right: 0;
+            top: 0;
+        }
+        &__menu-burger-item{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            &:hover{
+                color: pink;
+                cursor: pointer;
+            }
+        } 
+    }
+    .menu-burger-active{
+        display: block;
+    }
+    .view{
+        left: 0;
+        top: 20px;
+        transition:2s;
+    }
+    .viewm{
+        min-height: 350px;
+        transition:1s;
+    }
+    .footer{
+        &__block{
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        &__block-left{
+            margin-bottom: 25px;
+        }
+        &__block-center{
+            margin: 25px 0;
+        }
+        &__block-right{
+            margin-top: 25px;
+        }
+    }
+}

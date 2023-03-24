@@ -1,18 +1,24 @@
-const close = document.getElementById('close')
-const burger = document.getElementById('burger')
-const block = document.getElementById('block')
-const block1 = document.getElementById('block1')
+const burger = document.querySelectorAll('.header__menu-burger-item')
+const menuBlock = document.querySelector('.header__menu-block')
+const header = document.querySelector('.header')
+const menuLink = document.querySelectorAll('.header__menu-link')
 
-burger.addEventListener('click', () => {
-    close.style.display = "block"
-    burger.style.display = "none"
-    block.style.top = "50px"
-    block1.style.height = "450px"
+burger.forEach((element, index) => {
+    burger[index].addEventListener('click', () => {
+        burger.forEach(elem => {
+            elem.classList.toggle("menu-burger-active")
+        })
+        menuBlock.classList.toggle("view")
+        header.classList.toggle("viewm")
+    })
 })
-close.addEventListener('click', () => {
-    block.style.top = "-400px"
-    close.style.display = "none"
-    burger.style.display = "block"
-    block1.style.height = "70px"
-
+menuLink.forEach((element, index) => {
+    element.addEventListener('click', () => {
+        menuLink.forEach(elem => {
+            elem.classList.remove("active")
+        })
+    })
+    element.addEventListener('click', () => {
+        element.classList.add("active")
+    })
 })
