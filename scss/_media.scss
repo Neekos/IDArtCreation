@@ -40,8 +40,8 @@
             height: 35px;
             display: block;
             position:absolute;
-            right: 0;
-            top: 0;
+            right: 5px;
+            top: 5px;
         }
         &__menu-burger-item{
             display: none;
@@ -83,4 +83,7 @@
             margin-top: 25px;
         }
     }
+}
+.title{
+    line-height: 35px;
 }
