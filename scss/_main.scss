@@ -7,15 +7,8 @@
         margin-top: 50px;
     }
 
-    &__about-title{
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 20px;
-        letter-spacing: 5px;
-    }
-
     &__about-text{
-        margin-top: 20px;
+        margin: 20px 0;
         line-height: 25px;
         max-width: 500px;
         text-align: center;
@@ -31,13 +24,12 @@
         justify-content: center;
         align-items: center;
     }
-     &__price-title {
-        max-width: 100%;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 24px;
-        margin-top: 50px;
+    &__price-title{
         letter-spacing: 5px;
+        margin-top: 25px;
+        font-size: 20px;
+        text-transform: uppercase;
+
     }
 
     &__price-skills{
@@ -57,11 +49,6 @@
         box-shadow: 0 0 4em 4em white inset;
         opacity: 0.3;
     }
-    &__price-title{
-        font-size: 20px;
-        text-transform: uppercase;
-        padding-top: 20px;
-    }
 
     &__price-ico {
         margin-top: 30px;
@@ -77,13 +64,6 @@
         text-transform: uppercase;
         margin: 50px;
     }
-    &__contact-title {
-        text-align: center;
-        font-size: 20px;
-
-        margin: 20px 0;
-        letter-spacing: 5px;
-    }
 
     &__contact-item{
         margin: 20px;
@@ -97,4 +77,12 @@
             color: pink;
         }
     }
+}
+.title{
+    max-width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    margin: 50px 0 25px 0;
+    letter-spacing: 5px;
 }

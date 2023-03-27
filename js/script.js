@@ -22,3 +22,29 @@ menuLink.forEach((element, index) => {
         element.classList.add("active")
     })
 })
+
+let offset = 0
+const left = document.querySelector('.intro__img')
+document.querySelector('.left').addEventListener('click', () => {
+
+    offset += 100;
+    if (offset > 190) {
+        offset = -100;
+    }
+    left.style.left = -offset + '%';
+})
+document.querySelector('.rigth').addEventListener('click', () => {
+    offset -= 100;
+    if (offset < -100) {
+        offset = 100;
+    }
+    left.style.left = -offset + '%';
+})
+document.querySelector('.intro').addEventListener('touchmove', () => {
+
+    offset += 100;
+    if (offset > 190) {
+        offset = -100;
+    }
+    left.style.left = -offset + '%';
+})
